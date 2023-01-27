@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.encabezado {
+  height: 25px;
+  padding: 8px;
+  background: #efd3d7;
+  display: flex;
+  opacity: 0.7;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.header {
+  height: 27px;
+  background: #fff;
+}
+
+.logo {
+  height: 300%;
+  width: 100%;
+  text-align: center;
+}
+.logo img {
+  height: 100%;
+}
+
+main {
+  min-height: 721px;
+  background-color: #efd3d7;
+}
+
+.banner {
+  background-image: url(img/banner.png);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.categorias {
+  width: 100%;
+  height: 50vh;
+  background-color: #efd3d7;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 250px);
+  grid-gap: 10px;
+  position: relative;
+}
+
+.cat {
+  width: 100%;
+  border: 2px solid #fff;
+}
+
+.cat1 {
+  background-image: url(img/remeras.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cat1:hover {
+  transform: scale(1.1);
+}
+
+.cat2 {
+  background-image: url(img/pantalones.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cat2:hover {
+  transform: scale(1.1);
+}
+
+.cat3 {
+  background-image: url(img/vestidos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cat3:hover {
+  transform: scale(1.1);
+}
+
+.cat4 {
+  background-image: url(img/bodys.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cat4:hover {
+  transform: scale(1.1);
+}
+
+.cat5 {
+  background-image: url(img/sale.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cat5:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  position: absolute;
+  background-color: #efd3d7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Unna", serif;
+  text-align: center;
+  text-shadow: 0 0 5px #fff;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: "Unna", serif;
+  text-align: center;
+  text-shadow: 0 0 5px #fff;
+}
+
+.rrss {
+  background-color: #efd3d7;
+}
+
+.instagram a {
+  width: 100%;
+  height: 300px;
+  background-color: #efd3d7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #fff;
+  justify-self: center;
+}
+
+.img1 {
+  background-image: url(img/img1.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.img2 {
+  background-image: url(img/img2.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  background-image: url(img/img3.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Unna", serif;
+}
+
+.contacto {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 320px) {
+  main {
+    height: 1500px;
+  }
+  .categorias {
+    grid-gap: 0;
+    height: 83%;
+  }
+  .img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    justify-self: center;
+  }
+  .instagram a {
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 70%;
+    gap: 0;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .categorias {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    height: 800px;
+  }
+  .img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    justify-self: center;
+  }
+  .instagram a {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .categorias {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 5px;
+    height: 550px;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    justify-self: center;
+  }
+  .instagram a {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+    height: 20%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .categorias {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    height: 300px;
+  }
+  .img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    justify-self: center;
+  }
+  .instagram {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
